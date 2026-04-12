@@ -135,38 +135,6 @@ python run.py --comment 64c2a1b2c3d4e5f6a7b8c9d0
 python run.py --comment 64c2a1b2c3d4e5f6a7b8c9d0 -m "太实用了！"
 ```
 
-## 项目结构
-
-```
-KOL_xiaohongshu/
-├── run.py                         # CLI 入口
-├── .env.example                   # 配置模板
-├── config/
-│   └── topics.yaml                # 主题池
-├── src/
-│   ├── agent.py                   # 主编排器
-│   ├── config.py                  # 配置加载
-│   ├── cli.py                     # 交互式菜单界面
-│   ├── llm.py                     # LLM 客户端（支持所有 OpenAI 兼容 API）
-│   ├── models.py                  # 数据结构
-│   ├── engager.py                 # 互动引擎（浏览+点赞+AI评论）
-│   ├── research/
-│   │   ├── web_searcher.py        # Tavily 网页搜索
-│   │   └── image_searcher.py      # Unsplash/Pexels/Pixabay/Tavily 图片搜索
-│   ├── generator/
-│   │   ├── pipeline.py            # 内容生成流水线（小红书风格）
-│   │   └── slide_renderer.py      # 笔记风格图片渲染（HTML→截图）
-│   ├── publisher/
-│   │   ├── xhs_client.py          # 小红书 Playwright 自动化客户端
-│   │   ├── publisher.py           # 发布编排器
-│   │   ├── image_downloader.py    # 图片下载
-│   │   └── chrome_cookies.py      # 从 Chrome 导入登录状态
-│   └── utils/
-│       └── logger.py              # 日志
-├── output/                        # 生成的笔记
-└── data/                          # Cookie 缓存 & 临时图片
-```
-
 ## Pipeline 流程
 
 ```
