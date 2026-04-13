@@ -13,7 +13,7 @@ AI 驱动的小红书自动化 Agent — 自动搜索素材、生成小红书风
 ## 界面预览
 
 <div align="center">
-  <img src="docs/cli-menu.svg" alt="CLI 交互菜单" width="600">
+  <img src="docs/cli-menu.jpg" alt="CLI 交互菜单" width="600">
 </div>
 
 ## Quick Start
